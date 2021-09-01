@@ -1,0 +1,19 @@
+CAPI=2:
+
+name: "bci:cad:xyz_launcher:2.0"
+description: "Tool wrapper of Xyz tool suite."
+
+filesets:
+  xyz_launcher:
+    files:
+      - xyz.py
+      - Compile
+      - Link
+      - Run
+    file_type: toolLauncherSource
+
+targets:
+  default:
+    filesets:
+      - xyz_launcher
+
