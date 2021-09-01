@@ -17,7 +17,7 @@ from dagogo.sml.persist import persistable
 
 @persistable
 class Xyz(ToolLauncher):
-    def __init__(self, name=None, cmd=None, rundir='.', pipedir='.'):
+    def __init__(self, name=None, cmd=None, rundir='./output', pipedir='./output'):
         """
         """
         print(f'## Executing XYZ launcher from: {__file__} ...', flush=True)
